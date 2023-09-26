@@ -1,5 +1,5 @@
 <script setup>
-const { data } = await useAsyncData('events', () => queryContent('/events').limit(4).sort({dateCheck: -1}).find());
+const { data } = await useAsyncData('events', () => queryContent('/events').limit(4).sort({dateCheck: -1}).where().find());
 
 </script>
 <template>

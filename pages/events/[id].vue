@@ -33,7 +33,7 @@
         </section>
         </div>
         
-        <SectionsEventsOthers/>
+        <SectionsEventsOthers :remove="data._path"/>
         <Footer/>
     </div>
 </template>
