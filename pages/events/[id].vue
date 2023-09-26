@@ -26,7 +26,7 @@
                     </div>
                     
                 </div>
-                <div class="bg-white w-full h-96 rounded-xl">
+                <div class="bg-white w-full h-96 rounded-xl bg-cover bg-center" :style="'background-image: url(' + data.img + ');'">
 
                 </div>
             </div>

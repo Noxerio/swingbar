@@ -12,7 +12,7 @@
                         <div class="w-36 h-36 rounded-lg border-2 border-white flex justify-center items-center">
                             <Icon name="bxs:drink" color="white" size="90"/>
                         </div>
-                        <div class="w-36 h-36 flex justify-center items-center">
+                        <div class="w-36 h-36 hidden md:flex justify-center items-center">
                             <p class="font-bold text-6xl text-white">+</p>
                         </div>
                         <div class="w-36 h-36 rounded-lg border-2 border-white flex justify-center items-center">

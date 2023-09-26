@@ -1,5 +1,7 @@
 <script setup>
-const { data } = await useAsyncData('events', () => queryContent('/events').limit(4).sort({dateCheck: -1}).where().find());
+
+const props = defineProps(['remove'])
+const { data } = await useAsyncData('events', () => queryContent('/events').limit(4).sort({dateCheck: -1}).where({ _path: { $ne: props.remove }  }).find());
 
 </script>
 <template>

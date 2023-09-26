@@ -20,5 +20,6 @@ const { data } = await useAsyncData('events', () => queryContent('/events').limi
                 />
             </div>
         </div>
+        <Footer/>
     </section>
 </template>

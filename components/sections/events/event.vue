@@ -3,7 +3,7 @@
 </script>
 <template>
     <NuxtLink :to="props.path" class="flex flex-col hover:scale-105 transition-all cursor-pointer">
-        <div class="h-96 w-full bg-slate-800 rounded-xl p-5 mb-5">
+        <div class="h-96 w-full bg-slate-800 rounded-xl p-5 mb-5 bg-cover bg-center" :style="'background-image: url(' + props.img + ');'">
             <div class="absolute bg-amber-300 rounded-xl p-3">
                 <p class="font-primary font-bold">Vstupné: {{ props.price }}</p>
             </div>

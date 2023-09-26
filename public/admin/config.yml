@@ -26,6 +26,16 @@ collections:
       - {label: "Odkaz na zakoupení vstupenek", name: "ticket", widget: "string", required: false}
       - {label: "Náhledová fotografie", name: "img", widget: "image", required: false}
       - {label: "Popis", name: "body", widget: "markdown", required: false}
+  
+  - name: "openhours" # Used in routes, e.g., /admin/collections/blog
+    label: "Otevírací doba" # Used in the UI
+    folder: "/content/openhours" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Den", name: "title", widget: "string"}
+      - {label: "Otevírací doba", name: "time", widget: "string"}
+      - {label: "Pořadí", name: "order", widget: "string"}
 
 
       
