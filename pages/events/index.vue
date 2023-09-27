@@ -1,6 +1,12 @@
 <script setup>
-const { data } = await useAsyncData('events', () => queryContent('/events').limit(4).sort({dateCheck: -1}).find());
-
+const { data } = await useAsyncData('events', () => queryContent('/events').limit(6).sort({dateCheck: -1}).find());
+useHead({
+  title: 'Události | Swing Bar Ostrava',
+  meta: [
+    { name: 'description', content: 'Vítejte v Swing Baru! Přijďte si vychutnat výborné drinky, tanec a karaoke v jednom. Naše místo je naplněno hudebními tóny swingu a vzrušující atmosférou. Připojte se k nám a zažijte nezapomenutelnou noc plnou zábavy.' },
+    { name: 'keywords', content: 'Swing Bar, drinky, tanec, karaoke, swingová hudba, zábava, noční život, nezapomenutelná noc' }
+  ]
+})
 </script>
 <template>
     <section class="bg-slate-900">

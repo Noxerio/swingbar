@@ -39,3 +39,13 @@ onMounted(() => {
     </nav>
     <HeaderDrawer/>
 </template>
+
+<style>
+a.nuxt-link-active {
+  font-weight: r;
+}
+/* exact link will show the primary color for only the exact matching link */
+a.nuxt-link-exact-active {
+  color: #00c58e;
+}
+</style>
