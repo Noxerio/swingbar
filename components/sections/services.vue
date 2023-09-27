@@ -20,7 +20,7 @@
                 <div class="bg-gradient-to-r from-slate-800 to-slate-700 rounded-xl p-10 scale-95" >
                     <img src="/img/services/beer.png" class="p-14" alt="SwingBar Ostrava - Čepované pivo">
                     <h3 class="font-primary text-white font-bold text-3xl text-center mb-8">Čepované pivo</h3>
-                    <img class="w-28 mx-auto" src="/radegast.png">
+                    <img class="w-28 mx-auto" src="/img/radegast.png">
                 </div>
             </div>
         </div>
