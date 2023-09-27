@@ -1,5 +1,5 @@
 <template>
-    <div class="p-7" v-motion-slide-visible-left>
+    <div class="p-7" >
         <AssetsTitle :title="'Rezervujte si stůl!'"/>
         <AssetsHr/>
         <div class="grid md:grid-cols-2 gap-8">

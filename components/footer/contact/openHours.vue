@@ -2,7 +2,7 @@
     const { data } = await useAsyncData('openhours', () => queryContent('/openhours').sort({order: 1}).find());
 </script>
 <template>
-   <div class="rounded-xl border-2 border-white text-white p-7" v-motion-slide-visible-right>
+   <div class="rounded-xl border-2 border-white text-white p-7">
         <h3 class="font-primary text-4xl font-bold text-amber-300 text-center">Otevírací doba</h3>
         <table class="w-full m-5 text-2xl table-auto border-separate border-spacing-4">
             <tbody>

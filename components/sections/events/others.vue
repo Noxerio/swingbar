@@ -6,7 +6,7 @@ const { data } = await useAsyncData('events', () => queryContent('/events').limi
 </script>
 <template>
     <section class="bg-slate-900">
-        <div class="container mx-auto px-5">
+        <div class="container mx-auto px-5" v-motion-fade-visible>
             <AssetsTitle :title="'Další události'"/>
             <AssetsHr/>
             <div class="grid md:grid-cols-4 gap-8">

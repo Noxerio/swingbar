@@ -5,9 +5,9 @@ const { data } = await useAsyncData('events', () => queryContent('/events').limi
 <template>
     <section class="bg-slate-900">
         <div class="container mx-auto px-5">
-            <AssetsTitle :title="'Události ve Swingu'"/>
+            <AssetsTitle :title="'Události ve Swingu'" v-motion-fade-visible/>
             <AssetsHr/>
-            <div class="grid md:grid-cols-4 gap-8">
+            <div class="grid md:grid-cols-4 gap-8" v-motion-fade-visible>
                 <SectionsEventsEvent 
                     v-for="event in data" 
                     :key="event._path"

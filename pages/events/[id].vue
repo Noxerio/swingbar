@@ -15,9 +15,10 @@
                 <div class="flex flex-col gap-8">
                     <h2 class="font-primary text-4xl text-amber-300">{{ data.title }}</h2>
                     <p class="text-white font-bold text-xl">{{ data.date }}</p>
-
-                    <p v-if="data.body === '<p>Document is empty, overwrite this content with #empty slot in &lt;ContentDoc&gt;.</p>'" class="text-white opacity-70 leading-8">Tato událost mluví sama za sebe. Přijďte se za námi podívat a užijte si skvělou atmosféru plnou zábavy a dobrého kolektivu. Budeme se na vás těšit u nás ve SwingBaru!</p>
-                    <p v-else class="text-white opacity-70 leading-8"><ContentDoc/></p>
+                    <p v-if="data.body !== undefined && data.body.children.length !== 0" class="text-white opacity-70 leading-8">
+                        <ContentDoc  />
+                    </p>
+                    <p v-else class="text-white opacity-70 leading-8">Tato událost mluví sama za sebe. Přijďte se za námi podívat a užijte si skvělou atmosféru plnou zábavy a dobrého kolektivu. Budeme se na vás těšit u nás ve SwingBaru!</p>
                     <div class="flex gap-8 item-center">
                         <p class="bg-slate-800 px-7 py-4 rounded-xl text-white font-primary text-xl">Vstupné: {{ data.price }}</p>
                         <NuxtLink v-if="data.ticket" :to="data.ticket" class="flex items-center">

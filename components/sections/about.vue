@@ -2,7 +2,7 @@
     <section class="bg-slate-900" style="background-image:url('/img/bg.png');background-size:100% 100%">
         <div class="container mx-auto px-5">
             <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div v-motion-slide-visible-left>
+                <div v-motion-fade-visible>
                     <AssetsTitle :title="'Vítejte v Swing Baru'"/>
                     <AssetsHr />
                     <p class="text-white opacity-70 text-lg text-center leading-8" >
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                 </div>
-                <img src="/img/about.jpg" class="rounded-xl hidden md:flex" v-motion-slide-visible-right>
+                <img src="/img/about.jpg" class="rounded-xl hidden md:flex" v-motion-fade-visible>
             </div>
         </div>
     </section>
