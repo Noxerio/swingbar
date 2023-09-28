@@ -13,4 +13,11 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@vueuse/motion/nuxt',
   ],
+  app: {
+    head: {
+      script: [
+        {src: "https://identity.netlify.com/v1/netlify-identity-widget.js", tagPosition: "head"}
+      ]
+    }
+  }
 })
