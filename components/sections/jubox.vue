@@ -15,7 +15,7 @@
                     </div>
                 </div>
 
-                <img class="mx-auto" src="/img/jubox.png" >
+                <img class="mx-auto" src="/img/jubox.png" alt="jubox SwingBar">
 
                 <div class="flex flex-col gap-8 items-center justify-center">
                     <div class="bg-slate-800 p-4 rounded-xl w-full text-white border-2 border-red-800 hover:scale-105 transition-all">

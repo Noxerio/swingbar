@@ -11,63 +11,27 @@ slug:
   clean_accents: true
 
 collections:
-  - name: "reference" # Used in routes, e.g., /admin/collections/blog
-    label: "Reference" # Used in the UI
-    folder: "/content/references" # The path to the folder where the documents are stored
+  - name: "events" # Used in routes, e.g., /admin/collections/blog
+    label: "Události" # Used in the UI
+    folder: "/content/events" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - {label: "Název", name: "title", widget: "string"}
-      - {label: "Přední fotografie", name: "frontImg", widget: "image"}
-      - {label: "Další fotografie", name: "secondImg", widget: "image", required: false}
-      - {label: "Popis", name: "body", widget: "markdown"}
-
-  - name: "documents" # Used in routes, e.g., /admin/collections/blog
-    label: "Dokumenty" # Used in the UI
-    folder: "/content/documents" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Název", name: "title", widget: "string"}
-      - label: "Soubory"
-        name: "documentFiles"
-        widget: "list"
-        fields:
-          - {label: "Název", name: "title", widget: "string"}
-          - {label: "File", name: "file", widget: file}
+      - {label: "Datum události", name: "date", widget: "string"}
+      - {label: "Potvrzení data", name: "dateCheck", widget: "datetime",date_format: "DD.MM.YYYY", format: "LLL", picker_utc: false}
+      - {label: "Cena vstupného", name: "price", widget: "string"}
+      - {label: "Odkaz na zakoupení vstupenek", name: "ticket", widget: "string", required: false}
+      - {label: "Náhledová fotografie", name: "img", widget: "image", required: false}
+      - {label: "Popis", name: "body", widget: "markdown", required: false}
   
-  - name: "articles" # Used in routes, e.g., /admin/collections/blog
-    label: "Články" # Used in the UI
-    folder: "/content/articles" # The path to the folder where the documents are stored
+  - name: "openhours" # Used in routes, e.g., /admin/collections/blog
+    label: "Otevírací doba" # Used in the UI
+    folder: "/content/openhours" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "", name: "date", widget: "datetime"}
-      - {label: "Název", name: "title", widget: "string"}
-      - {label: "Náhledový obrázek", name: "Img", widget: "image", required: false}
-      - {label: "Popis", name: "body", widget: "markdown"}
-
-  - name: "jobs" # Used in routes, e.g., /admin/collections/blog
-    label: "Kariéra" # Used in the UI
-    folder: "/content/jobs" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Název", name: "title", widget: "string"}
-      - {label: "Popis", name: "body", widget: "markdown"}      
-
-  - name: "poptavka" # Used in routes, e.g., /admin/collections/blog
-    label: "Nezávazná poptávka" # Used in the UI
-    folder: "/content/poptavka" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Název", name: "title", widget: "string"}
-      - label: "Soubory"
-        name: "documentFiles"
-        widget: "list"
-        fields:
-          - {label: "Název", name: "title", widget: "string"}
-          - {label: "File", name: "file", widget: file}
-
+      - {label: "Den", name: "title", widget: "string"}
+      - {label: "Otevírací doba", name: "time", widget: "string"}
+      - {label: "Pořadí", name: "order", widget: "string"}
       

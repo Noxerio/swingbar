@@ -22,7 +22,7 @@
         <h5 class="font-bold my-2 text-lg font-primary">Tramvajový spoj:</h5>
         <p class="opacity-70">Zastávka Stodolní: <br>2, 8, 1, 14, 18, 6, 10</p>
     </div>
-    <iframe class="grayscale rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.2982566286555!2d18.282609676848647!3d49.83685313135378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e33ae1a631e7%3A0x3fbfff8f811ec15!2zxaBrcm91cG92YSAxMTA4LzEwLCA3MDIgMDAgTW9yYXZza8OhIE9zdHJhdmEgYSBQxZnDrXZveg!5e0!3m2!1scs!2scz!4v1685788672188!5m2!1scs!2scz" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe title="map" class="grayscale rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.2982566286555!2d18.282609676848647!3d49.83685313135378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e33ae1a631e7%3A0x3fbfff8f811ec15!2zxaBrcm91cG92YSAxMTA4LzEwLCA3MDIgMDAgTW9yYXZza8OhIE9zdHJhdmEgYSBQxZnDrXZveg!5e0!3m2!1scs!2scz!4v1685788672188!5m2!1scs!2scz" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </div>
 </div>
