@@ -6,7 +6,7 @@
             <div class="bg-slate-800 rounded-xl p-7">
                 <p class="text-white font-semibold text-center text-lg">
                     <Icon name="material-symbols:call-outline" color="white" size="25"/>
-                     +420 774 229 884
+                     +420 702 313 105
                 </p>
             </div>
             <div class="bg-slate-800 rounded-xl p-7">
